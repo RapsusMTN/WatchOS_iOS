@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		623FEC7023EAD5F900264378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623FEC6F23EAD5F900264378 /* AppDelegate.swift */; };
+		623FEC7223EAD5F900264378 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623FEC7123EAD5F900264378 /* SceneDelegate.swift */; };
+		623FEC7423EAD5F900264378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623FEC7323EAD5F900264378 /* ViewController.swift */; };
+		623FEC7723EAD5F900264378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623FEC7523EAD5F900264378 /* Main.storyboard */; };
+		623FEC7923EAD5FB00264378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623FEC7823EAD5FB00264378 /* Assets.xcassets */; };
+		623FEC7C23EAD5FB00264378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623FEC7A23EAD5FB00264378 /* LaunchScreen.storyboard */; };
+		623FEC8623EAD63700264378 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623FEC8523EAD63700264378 /* HealthKit.framework */; };
+		623FEC8823EAD91300264378 /* HealthStoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623FEC8723EAD91300264378 /* HealthStoreContainer.swift */; };
+		623FEC8F23EB19AC00264378 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623FEC8D23EB19AC00264378 /* Interface.storyboard */; };
+		623FEC9123EB19AE00264378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623FEC9023EB19AE00264378 /* Assets.xcassets */; };
+		623FEC9823EB19AE00264378 /* OneWatchClock Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 623FEC9723EB19AE00264378 /* OneWatchClock Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		623FEC9D23EB19AE00264378 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623FEC9C23EB19AE00264378 /* InterfaceController.swift */; };
+		623FEC9F23EB19AE00264378 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623FEC9E23EB19AE00264378 /* ExtensionDelegate.swift */; };
+		623FECA123EB19AE00264378 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623FECA023EB19AE00264378 /* NotificationController.swift */; };
+		623FECA323EB19AF00264378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623FECA223EB19AF00264378 /* Assets.xcassets */; };
+		623FECA823EB19AF00264378 /* OneWatchClock.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 623FEC8B23EB19AC00264378 /* OneWatchClock.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		62A822DC23EC6A800068BD17 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A822DB23EC6A800068BD17 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		623FEC9923EB19AE00264378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 623FEC6423EAD5F900264378 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 623FEC9623EB19AE00264378;
+			remoteInfo = "OneWatchClock Extension";
+		};
+		623FECA623EB19AF00264378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 623FEC6423EAD5F900264378 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 623FEC8A23EB19AC00264378;
+			remoteInfo = OneWatchClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		623FECAC23EB19AF00264378 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				623FEC9823EB19AE00264378 /* OneWatchClock Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623FECB023EB19AF00264378 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				623FECA823EB19AF00264378 /* OneWatchClock.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		623FEC6C23EAD5F900264378 /* OneWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		623FEC6F23EAD5F900264378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		623FEC7123EAD5F900264378 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		623FEC7323EAD5F900264378 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		623FEC7623EAD5F900264378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		623FEC7823EAD5FB00264378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		623FEC7B23EAD5FB00264378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		623FEC7D23EAD5FB00264378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		623FEC8323EAD63700264378 /* OneWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneWatch.entitlements; sourceTree = "<group>"; };
+		623FEC8523EAD63700264378 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		623FEC8723EAD91300264378 /* HealthStoreContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStoreContainer.swift; sourceTree = "<group>"; };
+		623FEC8B23EB19AC00264378 /* OneWatchClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneWatchClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		623FEC8E23EB19AC00264378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		623FEC9023EB19AE00264378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		623FEC9223EB19AE00264378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		623FEC9723EB19AE00264378 /* OneWatchClock Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OneWatchClock Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		623FEC9C23EB19AE00264378 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		623FEC9E23EB19AE00264378 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		623FECA023EB19AE00264378 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		623FECA223EB19AF00264378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		623FECA423EB19AF00264378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		623FECA523EB19AF00264378 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		62A822DA23EC6A800068BD17 /* OneWatchClock Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OneWatchClock Extension.entitlements"; sourceTree = "<group>"; };
+		62A822DB23EC6A800068BD17 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		623FEC6923EAD5F900264378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623FEC8623EAD63700264378 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623FEC9423EB19AE00264378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A822DC23EC6A800068BD17 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		623FEC6323EAD5F900264378 = {
+			isa = PBXGroup;
+			children = (
+				623FEC6E23EAD5F900264378 /* OneWatch */,
+				623FEC8C23EB19AC00264378 /* OneWatchClock */,
+				623FEC9B23EB19AE00264378 /* OneWatchClock Extension */,
+				623FEC6D23EAD5F900264378 /* Products */,
+				623FEC8423EAD63700264378 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		623FEC6D23EAD5F900264378 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				623FEC6C23EAD5F900264378 /* OneWatch.app */,
+				623FEC8B23EB19AC00264378 /* OneWatchClock.app */,
+				623FEC9723EB19AE00264378 /* OneWatchClock Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		623FEC6E23EAD5F900264378 /* OneWatch */ = {
+			isa = PBXGroup;
+			children = (
+				623FEC8323EAD63700264378 /* OneWatch.entitlements */,
+				623FEC6F23EAD5F900264378 /* AppDelegate.swift */,
+				623FEC7123EAD5F900264378 /* SceneDelegate.swift */,
+				623FEC7323EAD5F900264378 /* ViewController.swift */,
+				623FEC7523EAD5F900264378 /* Main.storyboard */,
+				623FEC7823EAD5FB00264378 /* Assets.xcassets */,
+				623FEC7A23EAD5FB00264378 /* LaunchScreen.storyboard */,
+				623FEC7D23EAD5FB00264378 /* Info.plist */,
+				623FEC8723EAD91300264378 /* HealthStoreContainer.swift */,
+			);
+			path = OneWatch;
+			sourceTree = "<group>";
+		};
+		623FEC8423EAD63700264378 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62A822DB23EC6A800068BD17 /* HealthKit.framework */,
+				623FEC8523EAD63700264378 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		623FEC8C23EB19AC00264378 /* OneWatchClock */ = {
+			isa = PBXGroup;
+			children = (
+				623FEC8D23EB19AC00264378 /* Interface.storyboard */,
+				623FEC9023EB19AE00264378 /* Assets.xcassets */,
+				623FEC9223EB19AE00264378 /* Info.plist */,
+			);
+			path = OneWatchClock;
+			sourceTree = "<group>";
+		};
+		623FEC9B23EB19AE00264378 /* OneWatchClock Extension */ = {
+			isa = PBXGroup;
+			children = (
+				62A822DA23EC6A800068BD17 /* OneWatchClock Extension.entitlements */,
+				623FEC9C23EB19AE00264378 /* InterfaceController.swift */,
+				623FEC9E23EB19AE00264378 /* ExtensionDelegate.swift */,
+				623FECA023EB19AE00264378 /* NotificationController.swift */,
+				623FECA223EB19AF00264378 /* Assets.xcassets */,
+				623FECA423EB19AF00264378 /* Info.plist */,
+				623FECA523EB19AF00264378 /* PushNotificationPayload.apns */,
+			);
+			path = "OneWatchClock Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		623FEC6B23EAD5F900264378 /* OneWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 623FEC8023EAD5FB00264378 /* Build configuration list for PBXNativeTarget "OneWatch" */;
+			buildPhases = (
+				623FEC6823EAD5F900264378 /* Sources */,
+				623FEC6923EAD5F900264378 /* Frameworks */,
+				623FEC6A23EAD5F900264378 /* Resources */,
+				623FECB023EB19AF00264378 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				623FECA723EB19AF00264378 /* PBXTargetDependency */,
+			);
+			name = OneWatch;
+			productName = OneWatch;
+			productReference = 623FEC6C23EAD5F900264378 /* OneWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		623FEC8A23EB19AC00264378 /* OneWatchClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 623FECAD23EB19AF00264378 /* Build configuration list for PBXNativeTarget "OneWatchClock" */;
+			buildPhases = (
+				623FEC8923EB19AC00264378 /* Resources */,
+				623FECAC23EB19AF00264378 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				623FEC9A23EB19AE00264378 /* PBXTargetDependency */,
+			);
+			name = OneWatchClock;
+			productName = OneWatchClock;
+			productReference = 623FEC8B23EB19AC00264378 /* OneWatchClock.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		623FEC9623EB19AE00264378 /* OneWatchClock Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 623FECA923EB19AF00264378 /* Build configuration list for PBXNativeTarget "OneWatchClock Extension" */;
+			buildPhases = (
+				623FEC9323EB19AE00264378 /* Sources */,
+				623FEC9423EB19AE00264378 /* Frameworks */,
+				623FEC9523EB19AE00264378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OneWatchClock Extension";
+			productName = "OneWatchClock Extension";
+			productReference = 623FEC9723EB19AE00264378 /* OneWatchClock Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		623FEC6423EAD5F900264378 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = jmartin;
+				TargetAttributes = {
+					623FEC6B23EAD5F900264378 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					623FEC8A23EB19AC00264378 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					623FEC9623EB19AE00264378 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 623FEC6723EAD5F900264378 /* Build configuration list for PBXProject "OneWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 623FEC6323EAD5F900264378;
+			productRefGroup = 623FEC6D23EAD5F900264378 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				623FEC6B23EAD5F900264378 /* OneWatch */,
+				623FEC8A23EB19AC00264378 /* OneWatchClock */,
+				623FEC9623EB19AE00264378 /* OneWatchClock Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		623FEC6A23EAD5F900264378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623FEC7C23EAD5FB00264378 /* LaunchScreen.storyboard in Resources */,
+				623FEC7923EAD5FB00264378 /* Assets.xcassets in Resources */,
+				623FEC7723EAD5F900264378 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623FEC8923EB19AC00264378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623FEC9123EB19AE00264378 /* Assets.xcassets in Resources */,
+				623FEC8F23EB19AC00264378 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623FEC9523EB19AE00264378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623FECA323EB19AF00264378 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		623FEC6823EAD5F900264378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623FEC7423EAD5F900264378 /* ViewController.swift in Sources */,
+				623FEC7023EAD5F900264378 /* AppDelegate.swift in Sources */,
+				623FEC7223EAD5F900264378 /* SceneDelegate.swift in Sources */,
+				623FEC8823EAD91300264378 /* HealthStoreContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		623FEC9323EB19AE00264378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623FECA123EB19AE00264378 /* NotificationController.swift in Sources */,
+				623FEC9F23EB19AE00264378 /* ExtensionDelegate.swift in Sources */,
+				623FEC9D23EB19AE00264378 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		623FEC9A23EB19AE00264378 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 623FEC9623EB19AE00264378 /* OneWatchClock Extension */;
+			targetProxy = 623FEC9923EB19AE00264378 /* PBXContainerItemProxy */;
+		};
+		623FECA723EB19AF00264378 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 623FEC8A23EB19AC00264378 /* OneWatchClock */;
+			targetProxy = 623FECA623EB19AF00264378 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		623FEC7523EAD5F900264378 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				623FEC7623EAD5F900264378 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		623FEC7A23EAD5FB00264378 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				623FEC7B23EAD5FB00264378 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		623FEC8D23EB19AC00264378 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				623FEC8E23EB19AC00264378 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		623FEC7E23EAD5FB00264378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		623FEC7F23EAD5FB00264378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		623FEC8123EAD5FB00264378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OneWatch/OneWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GKAF9ASCH5;
+				INFOPLIST_FILE = OneWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.OneWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		623FEC8223EAD5FB00264378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OneWatch/OneWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GKAF9ASCH5;
+				INFOPLIST_FILE = OneWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.OneWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		623FECAA23EB19AF00264378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "OneWatchClock Extension/OneWatchClock Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GKAF9ASCH5;
+				INFOPLIST_FILE = "OneWatchClock Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.OneWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		623FECAB23EB19AF00264378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "OneWatchClock Extension/OneWatchClock Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GKAF9ASCH5;
+				INFOPLIST_FILE = "OneWatchClock Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.OneWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		623FECAE23EB19AF00264378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GKAF9ASCH5;
+				IBSC_MODULE = OneWatchClock_Extension;
+				INFOPLIST_FILE = OneWatchClock/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.OneWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		623FECAF23EB19AF00264378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GKAF9ASCH5;
+				IBSC_MODULE = OneWatchClock_Extension;
+				INFOPLIST_FILE = OneWatchClock/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.OneWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		623FEC6723EAD5F900264378 /* Build configuration list for PBXProject "OneWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623FEC7E23EAD5FB00264378 /* Debug */,
+				623FEC7F23EAD5FB00264378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		623FEC8023EAD5FB00264378 /* Build configuration list for PBXNativeTarget "OneWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623FEC8123EAD5FB00264378 /* Debug */,
+				623FEC8223EAD5FB00264378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		623FECA923EB19AF00264378 /* Build configuration list for PBXNativeTarget "OneWatchClock Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623FECAA23EB19AF00264378 /* Debug */,
+				623FECAB23EB19AF00264378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		623FECAD23EB19AF00264378 /* Build configuration list for PBXNativeTarget "OneWatchClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623FECAE23EB19AF00264378 /* Debug */,
+				623FECAF23EB19AF00264378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 623FEC6423EAD5F900264378 /* Project object */;
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="OneWatchClock" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="XO6-Pn-ofd">
+                            <items>
+                                <group width="1" alignment="left" id="7oB-KL-0VR">
+                                    <items>
+                                        <label alignment="center" text="---" id="MaF-Az-DRo">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                        </label>
+                                        <label alignment="center" text="❤️" id="4gx-sf-QFr">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <timer alignment="center" id="hep-ha-zYU"/>
+                                <button width="1" alignment="left" title="START" id="7gG-fj-sM8">
+                                    <connections>
+                                        <action selector="startWorkout" destination="AgC-eL-Hgc" id="af1-nd-2SB"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="STOP" id="zPZ-D5-0Lr">
+                                    <connections>
+                                        <action selector="stopWorkout" destination="AgC-eL-Hgc" id="BNS-Zd-zmd"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="heartIconLabel" destination="4gx-sf-QFr" id="Sx2-rc-PhF"/>
+                        <outlet property="receivedTextLabelñ" destination="MaF-Az-DRo" id="Kdw-Dr-hf9"/>
+                        <outlet property="timer" destination="hep-ha-zYU" id="uSl-eA-Fjx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="OneWatchClock" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="OneWatchClock" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>
